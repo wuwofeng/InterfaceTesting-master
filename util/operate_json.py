@@ -5,10 +5,10 @@ import json
 import os
 #当前路径
 curPath = os.path.abspath(os.path.dirname(__file__))
-print(curPath)
+#print(curPath)
 #根路径
 rootPath = os.path.abspath(os.path.dirname(curPath))
-print(rootPath)
+#print(rootPath)
 
 #操作的json文件的路径
 class OperateJson(object):
@@ -19,7 +19,7 @@ class OperateJson(object):
             #配置使用的json文件名称和路径
             self.file_name = r"data/TestcaseHeaders2.json"
             self.file_name = os.path.join(rootPath, self.file_name)
-            print("self.file_name: ", self.file_name)
+            print("执行的请求头是： ", self.file_name)
 
         self.data = self.get_json()
 

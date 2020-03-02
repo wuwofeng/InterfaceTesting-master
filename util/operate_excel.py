@@ -8,9 +8,9 @@ import os
 import sys
 
 curPath = os.path.abspath(os.path.dirname(__file__))
-print(curPath)
+#print(curPath)
 rootPath = os.path.abspath(os.path.dirname(curPath))
-print(rootPath)
+#print(rootPath)
 
 class OperateExcel(object):
     def __init__(self, file_name=None, sheet_id=None):
@@ -24,7 +24,7 @@ class OperateExcel(object):
             #使用的文件的具体路径
             self.file_name = r"data/TestcasesKeyword2.xls"
             self.file_name = os.path.join(rootPath, self.file_name)
-            print(self.file_name)
+            print("执行的接口文件是：",self.file_name)
 
         if sheet_id:
             self.sheet_id = sheet_id

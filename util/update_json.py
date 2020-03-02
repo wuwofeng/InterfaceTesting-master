@@ -3,10 +3,10 @@ import os
 from util.opreate_login import Login
 #当前路径
 curPath = os.path.abspath(os.path.dirname(__file__))
-print(curPath)
+#print(curPath)
 #根路径
 rootPath = os.path.abspath(os.path.dirname(curPath))
-print(rootPath)
+#print(rootPath)
 
 #操作的json文件的路径
 class UpdateJson(object):

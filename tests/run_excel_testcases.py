@@ -7,10 +7,10 @@ import os
 import json
 
 curPath = os.path.abspath(os.path.dirname(__file__))
-print(curPath)
+#print(curPath)
 rootPath = os.path.split(curPath)[0]
 sys.path.append(rootPath)
-print('rootPath: ', rootPath)
+#print('rootPath: ', rootPath)
 
 from basic.get_excel_testcases import GetExcelTestcases
 from basic.intergrate_request import IntergrateRequest
@@ -36,7 +36,6 @@ class RunExcelTestcases(object):
     def run_testcases(self):
         #首先执行登录初始化操作
         self.ud.update_json()
-
         # 定义空列表，存放执行成功、失败和不执行的测试用例
         pass_lists = []
         fail_lists = []
@@ -99,12 +98,12 @@ class RunExcelTestcases(object):
                 no_execute_lists.append(case)
         print("没有执行的测试用例有, 按序号有：", no_execute_lists)
         #发送邮件
-        self.ec.send_mail(pass_lists, fail_lists, no_execute_lists)
-        print("....邮件已发送成功...")
-        # print("---邮件尚未发送---")
+        #self.ec.send_mail(pass_lists, fail_lists, no_execute_lists)
+        #print("....邮件已发送成功...")
+        print("---邮件尚未发送---")
 
 
 if __name__ == "__main__":
     rts = RunExcelTestcases()
     rts.run_testcases()
-    print("...程序已执行完毕...")
+    print("...程序已执行完毕,如果发送了文件请查阅文件内容...")
