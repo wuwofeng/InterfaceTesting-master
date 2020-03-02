@@ -23,10 +23,11 @@ from util.update_json import  UpdateJson
 
 class RunExcelTestcases(object):
     def __init__(self):
+        #填写使用的xls文件路径，不填写默认使用TestcasesKeyword.xls
         self.gtc = GetExcelTestcases()
         self.ir = IntergrateRequest()
         self.ec = EmailConfig()
-        #填写使用的默认路径，不填写默认使用TestcaseHeaders2.json
+        #填写使用的json文件路径，不填写默认使用TestcaseHeaders2.json
         self.oj = OperateJson(r'C:\Users\FENG\Desktop\InterfaceTesting\data\TestcaseHeaders3.json')
         self.oj = OperateJson()
         self.cs = CompareStr()
