@@ -1,0 +1,11 @@
+{
+"Accept": "application/json, text/plain, */*",
+"channel": "99",
+"Origin": "http://test.manager.aomiapp.com",
+"Referer": "http://test.manager.aomiapp.com/",
+"requestTime": "1583117559708",
+"sessionId": "undefined",
+"sign": "920f3326294cbaca00450fd710fb38c6",
+"token": "",
+"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36"
+}
