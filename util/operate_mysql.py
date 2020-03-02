@@ -10,10 +10,10 @@ class OperateMysql(object):
     def __init__(self):
         # 数据库初始化连接
         self.connect_interface_testing = pymysql.connect(
-            "129.28.170.125",
-            "root",
-            "Root@159357",
-            "InterfaceTesting",
+            # "129.28.170.125",
+            # "root",
+            # "Root@159357",
+            # "InterfaceTesting",
             cursorclass=pymysql.cursors.DictCursor
         )
 
