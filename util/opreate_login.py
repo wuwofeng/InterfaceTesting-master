@@ -31,7 +31,7 @@ class Login(object):
         token = res.json()['result']['token']
         sessionId = self.data['sessionId']
         #sign的加密方法：md5(timestamp + 'sdf59s4d$JKf-/sdf23fwf')
-        timestamp = sessionId = self.data['timestamp']
+        timestamp = self.data['timestamp']
         prMd5 = timestamp + 'sdf59s4d$JKf-/sdf23fwf'
         sign = md5(prMd5.encode(encoding='UTF-8')).hexdigest()
         return token,sessionId,sign
